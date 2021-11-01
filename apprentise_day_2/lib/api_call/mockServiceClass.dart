@@ -20,12 +20,14 @@ class MockClassForApi {
     final responce = json.decode(source);
     print(responce);
     final data = FriendFeedt.fromJson(responce);
+    // print(data.feed);
     return data;
   }
 
   static Future<Recipes> getRecips() async {
     final source =
         await rootBundle.loadString('assets/sample_data/sample_recipes.json');
+    print(source);
     final responce = json.decode(source);
     final data = Recipes.fromJson(responce);
     return data;

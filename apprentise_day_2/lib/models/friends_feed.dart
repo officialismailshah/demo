@@ -12,13 +12,7 @@ class FriendFeedt {
     }
   }
 
-  // Map<String, dynamic> toJson() {
-  //   final Map<String, dynamic> data = new Map<String, dynamic>();
-  //   if (this.feed != null) {
-  //     data['feed'] = this.feed!.map((v) => v.toJson()).toList();
-  //   }
-  //   return data;
-  // }
+  
 }
 
 class Feed {
@@ -45,13 +39,13 @@ class Feed {
     );
   }
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['profileImageUrl'] = this.profileImageUrl;
-    data['comment'] = this.comment;
-    data['foodPictureUrl'] = this.foodPictureUrl;
-    data['timestamp'] = this.timestamp;
-    return data;
-  }
+  // Map<String, dynamic> toJson() {
+  //   final Map<String, dynamic> data = new Map<String, dynamic>();
+  //   data['id'] = this.id;
+  //   data['profileImageUrl'] = this.profileImageUrl;
+  //   data['comment'] = this.comment;
+  //   data['foodPictureUrl'] = this.foodPictureUrl;
+  //   data['timestamp'] = this.timestamp;
+  //   return data;
+  // }
 }
